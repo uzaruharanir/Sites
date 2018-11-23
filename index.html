@@ -7,14 +7,23 @@
 </head>
 <body>
 	<h1>HTML OverView</h1>
+	<hr>
+	Navigation
+	<a href="#list">list</a>
+	<a href="#tables">Tables</a>
+	<a href="#forms">Forms</a>
+	<a href=""></a>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diam</p>
+	<a href="#"><img src="passport.jpg" width="50" height="50"></a>
 	<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diam</h2>
-	<h2>LIST</h2>
+	<h2 id="list">LIST</h2>
 	<H3>Ordered List</H3>
 	<ol type="I"><li>CST</li>
-		<li>CBE</li>
+		//EXTERNAL LINK
+		<li><a href="">CST</a></li>
 		<li>CAA</li>
-		<li>CAVM</li>
+		//INTERNAL LINK
+		<li><a href="sites/html/test.html">CBE</a></li>
 	</ol>
 	<H3>UnOrdered list</H3>
 	<ul>
@@ -31,7 +40,7 @@
 		<dt>Cyber Security</dt>
 		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diamLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diamLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diamLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diamLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam diam</dd>
 	</dl>
-	<h2>Tables</h2>
+	<h2 id="tables">Tables</h2>
 	<table border="1">
 		<tr>
 			<th>Course</th>
@@ -64,6 +73,37 @@
 				<td>17:00</td>
 
 			</tr>
+		</tr>
 
 	</table>
+	<h2 id="forms">FORMS</h2>
+	<form action="" method="POST" enctype="multipart/form-data">
+		<label for="First name" >First Name</label>
+		<input type="" name="First name" placeholder="Enter Name" autocomplete="ON"><br>
+		<label for="SurName" >SurName</label>
+		<input type="" name="SurName" placeholder="Enter SurName" autocomplete="ON"><br>
+		<label for="Gender">Gender:</label>
+		       <label for="gender">Female</label>
+               <input type="radio"name="gender">
+               <label for="gender">Male</label>
+               <input type="radio"name="gender"></br>
+	 <label for="hobbies">hobbies</label><br>
+               <input type="checkbox">books</br>
+               <input type="checkbox">sports</br>
+               <input type="checkbox">music</br>
+               <input type="checkbox">movies</br>
+               <label for="province">province</label>
+               <select>
+                   <option>western</option>
+                   <option>eastern</option>
+                   <option>southern</option>
+                   <option>nothern</option>
+                   <option>kigali</option> 
+               </select></br>
+               <label for="profile">profile</label>
+               <input type="file"name="" id="photo"></br>
+               <label for="comment">comment</label>
+               <textarea>comment</textarea><br>
+               <input type="submit" name="Send">
+	</form>
 </html>
